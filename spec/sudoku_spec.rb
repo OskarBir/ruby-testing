@@ -17,4 +17,14 @@ RSpec.describe Sudoku do
     end
   end
 
+  context "#get row" do
+    it "checks if row is an array" do
+      expect(sudoku.get_row(0)).to be_a_kind_of(Array)
+    end
+
+    it "checks if row is an array" do
+      expect(sudoku.get_row(0)).to match_array([5,3,0,0,7,0,0,0,0])
+    end
+  end
+
 end
