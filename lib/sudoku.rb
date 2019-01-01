@@ -1,6 +1,7 @@
 class Sudoku 
   attr_reader :board
   def initialize(string_input)
+    validate(string_input)
     @string_input = string_input
     @array_of_rows = []
     create_rows
@@ -54,9 +55,13 @@ class Sudoku
   end
    
   def sudoku_solve!
+    position_checked = 0
     while @array_of_rows.flatten.include?(0)
       @array_of_rows.each_with_index do |row, row_index| 
-        row.each_with_index do |column, col_index| 
+        row.each_with_index do |column, col_index|
+          if position_checked > 90
+            raise ArgumentError, "no solution"
+          end
           if @array_of_rows[row_index][col_index] == 0
              @solutions = (1..9).to_a
              @solutions -= nine_box_grid(row_index,col_index)  
@@ -64,19 +69,18 @@ class Sudoku
              @solutions -= get_column(col_index)
              if @solutions.size == 1
               @array_of_rows[row_index][col_index] = @solutions.join("").to_i
+              position_checked = 0
               puts
               board
               puts
-             end   
+             end
           end
+          position_checked += 1
         end
       end
     end
   end
 
-  # def is_solved?
-  #   return true ? self.sudoku_solve! 
-  # end
 
   private
   def validate(string_input)

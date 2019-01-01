@@ -1,4 +1,4 @@
-require_relative './sudoku'
+require_relative 'sudoku'
 
 puts "Let's start the game!"
 puts " Please enter the 81 numbers characters found in the original Sudoku table, including zeros ('0') for any blank space(ex: 50030050060110440555...)"
