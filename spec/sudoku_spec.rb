@@ -55,6 +55,10 @@ RSpec.describe Sudoku do
       expect(sudoku.nine_box_grid(0,0)).to be_a_kind_of(Array)
     end
 
+    it "checks if the correct array is returned" do
+      expect(sudoku.nine_box_grid(4,4)).to match_array([0,6,0,8,0,3,0,2,0])
+    end
+
   end
 
 
