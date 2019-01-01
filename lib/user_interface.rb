@@ -8,8 +8,12 @@ puts " Please enter the 81 numbers characters found in the original Sudoku table
 
 
 puts "Let's fill out a sudoku table with your original inputs: "
-  # Here goes the code for printing the board without solving it 
-  p game.board
+  # Here goes the code for printing the board without solving it
+
+  puts "############################################"
+  game.board
+  puts "############################################"
+  puts
 
 puts "Are you ready to see how I help you to solve your Sudoku game?, enter 'Y' for yes and 'N'for no "
   user_decision = gets.chomp
