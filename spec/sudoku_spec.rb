@@ -6,6 +6,7 @@ RSpec.describe Sudoku do
   let(:too_hard_sudoku) {Sudoku.new("000600070000043090600000003850000000720050069364900081000830004000090035037000600")}
   let(:too_short_sudoku) {Sudoku.new("123456")}
   let(:too_long_sudoku) {Sudoku.new("0006000700000430906000000038500000007200500693649000810008300040000900350370006003245")}
+
   context "#create rows" do
     it "checks if array is created" do
       expect(sudoku.create_rows).to be_a_kind_of(Array)
