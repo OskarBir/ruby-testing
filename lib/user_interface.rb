@@ -6,7 +6,7 @@ class User_interface
     puts "Let's start the game!"
     puts "Would you like to enter the numbers or read them from file? (enter/read)"
     if enter_or_read
-      puts " Please enter the 81 numbers characters found in the original Sudoku table, including zeros ('0') for any blank space(ex: 50030050060110440555...)"
+      puts "Please enter the 81 numbers characters found in the original Sudoku table, including zeros ('0') for any blank space(ex: 50030050060110440555...)"
       @game = Sudoku.new(gets.chomp.to_s)
     else
       puts "Please enter full file path (ex:/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt)"
@@ -24,6 +24,7 @@ class User_interface
     user_decision = gets.chomp
     if user_decision.upcase == "Y"
       @game.sudoku_solve!
+      puts "I did it!"
     elsif user_decision.upcase == "N"
       puts "Goodbye!"
     else
@@ -51,8 +52,4 @@ class User_interface
     end
   end
 end
-
-# user_interface = User_interface.new
-# user_interface.start_game
-
 

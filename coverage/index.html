@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T15:30:10+01:00">2019-01-04T15:30:10+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-01-04T16:43:53+01:00">2019-01-04T16:43:53+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.97%</span></span>
+    (<span class="covered_percent"><span class="red">29.59%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         270.59
+       <span class="red">
+         0.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>158</b> relevant lines. 
-    <span class="green"><b>139</b> lines covered</span> and
-    <span class="red"><b>19</b> lines missed </span>
+    <b>196</b> relevant lines. 
+    <span class="green"><b>58</b> lines covered</span> and
+    <span class="red"><b>138</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,42 +52,42 @@
       
       <tr>
         <td class="strong"><a href="#a5c085904f7420937201205e62210cb787b2e1e8" class="src_link" title="lib/sudoku.rb">lib/sudoku.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">18.64 %</td>
         <td>98</td>
         <td>59</td>
-        <td>59</td>
-        <td>0</td>
-        <td>722.6</td>
+        <td>11</td>
+        <td>48</td>
+        <td>0.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#fb64d36969f2b4f7af61ed192e2400b818719d39" class="src_link" title="lib/user_interface.rb">lib/user_interface.rb</a></td>
-        <td class="red strong">42.42 %</td>
-        <td>58</td>
-        <td>33</td>
-        <td>14</td>
-        <td>19</td>
-        <td>0.7</td>
+        <td class="red strong">41.67 %</td>
+        <td>59</td>
+        <td>36</td>
+        <td>15</td>
+        <td>21</td>
+        <td>0.4</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8c6d6cea32672c3ab13f58a18a98a5653ba06209" class="src_link" title="spec/sudoku_spec.rb">spec/sudoku_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">63.83 %</td>
         <td>99</td>
         <td>47</td>
-        <td>47</td>
-        <td>0</td>
-        <td>1.5</td>
+        <td>30</td>
+        <td>17</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#f7531208bf074b5767f9de5265838d61b5ccb196" class="src_link" title="spec/user_interface_spec.rb">spec/user_interface_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>45</td>
-        <td>19</td>
-        <td>19</td>
-        <td>0</td>
-        <td>1.4</td>
+        <td class="red strong">3.7 %</td>
+        <td>111</td>
+        <td>54</td>
+        <td>2</td>
+        <td>52</td>
+        <td>0.0</td>
       </tr>
       
     </tbody>
@@ -109,11 +109,11 @@
         <div class="source_table" id="a5c085904f7420937201205e62210cb787b2e1e8">
   <div class="header">
     <h3>lib/sudoku.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">18.64 %</span> covered</h4>
     <div>
       <b>59</b> relevant lines. 
-      <span class="green"><b>59</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>48</b> lines missed.</span>
     </div>
   </div>
   
@@ -144,26 +144,26 @@
           <code class="ruby">  def initialize(string_input)</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="5">
-          <span class="hits">17</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">    validate(string_input)</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="6">
-          <span class="hits">15</span>
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
           
           <code class="ruby">    @string_input = string_input</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="7">
-          <span class="hits">15</span>
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
           
           <code class="ruby">    @array_of_rows = []</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="8">
-          <span class="hits">15</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
           
           <code class="ruby">    create_rows</code>
         </li>
@@ -198,20 +198,20 @@
           <code class="ruby">  def create_rows</code>
         </li>
       
-        <li class="covered" data-hits="1476" data-linenumber="14">
-          <span class="hits">1476</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
           
           <code class="ruby">    new_string_num = @string_input.split(//).to_a.map {|char| char.to_i}</code>
         </li>
       
-        <li class="covered" data-hits="180" data-linenumber="15">
-          <span class="hits">180</span>
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
           
           <code class="ruby">    9.times {@array_of_rows &lt;&lt; new_string_num.shift(9)}</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="16">
-          <span class="hits">18</span>
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
           
           <code class="ruby">    @array_of_rows</code>
         </li>
@@ -240,8 +240,8 @@
           <code class="ruby">  def get_row(row_index)</code>
         </li>
       
-        <li class="covered" data-hits="425" data-linenumber="21">
-          <span class="hits">425</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">    @array_of_rows[row_index]</code>
         </li>
@@ -270,8 +270,8 @@
           <code class="ruby">  def get_column(col_index)</code>
         </li>
       
-        <li class="covered" data-hits="425" data-linenumber="26">
-          <span class="hits">425</span>
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
           
           <code class="ruby">    @array_of_rows.transpose[col_index]</code>
         </li>
@@ -300,38 +300,38 @@
           <code class="ruby">  def board</code>
         </li>
       
-        <li class="covered" data-hits="106" data-linenumber="31">
-          <span class="hits">106</span>
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
           
           <code class="ruby">    (0..8).to_a.each do |i|</code>
         </li>
       
-        <li class="covered" data-hits="954" data-linenumber="32">
-          <span class="hits">954</span>
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
           
           <code class="ruby">      puts</code>
         </li>
       
-        <li class="covered" data-hits="954" data-linenumber="33">
-          <span class="hits">954</span>
+        <li class="missed" data-hits="0" data-linenumber="33">
+          
           
           <code class="ruby">      puts &quot;- &quot; * 12 if i % 3 == 0</code>
         </li>
       
-        <li class="covered" data-hits="954" data-linenumber="34">
-          <span class="hits">954</span>
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
           
           <code class="ruby">      (0..8).to_a.each do |j|</code>
         </li>
       
-        <li class="covered" data-hits="8586" data-linenumber="35">
-          <span class="hits">8586</span>
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
           
           <code class="ruby">        print &quot;| &quot; if j % 3 == 0</code>
         </li>
       
-        <li class="covered" data-hits="8586" data-linenumber="36">
-          <span class="hits">8586</span>
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
           
           <code class="ruby">        print @array_of_rows[i][j].to_s + &quot; &quot;</code>
         </li>
@@ -366,20 +366,20 @@
           <code class="ruby">  def nine_box_grid(row_index, col_index)</code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="42">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
           
           <code class="ruby">    row_off_set = row_index - (row_index % 3)</code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="43">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
           
           <code class="ruby">    col_off_set = col_index - (col_index % 3)</code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="44">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
           
           <code class="ruby">    box_array = []</code>
         </li>
@@ -390,38 +390,38 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="46">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
           
           <code class="ruby">    x = 0</code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="47">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
           
           <code class="ruby">    while x &lt; 3</code>
         </li>
       
-        <li class="covered" data-hits="1278" data-linenumber="48">
-          <span class="hits">1278</span>
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
           
           <code class="ruby">      y = 0</code>
         </li>
       
-        <li class="covered" data-hits="1278" data-linenumber="49">
-          <span class="hits">1278</span>
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
           
           <code class="ruby">      while y &lt; 3</code>
         </li>
       
-        <li class="covered" data-hits="3834" data-linenumber="50">
-          <span class="hits">3834</span>
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
           
           <code class="ruby">        box_array &lt;&lt; @array_of_rows[row_off_set + x][col_off_set + y]</code>
         </li>
       
-        <li class="covered" data-hits="3834" data-linenumber="51">
-          <span class="hits">3834</span>
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
           
           <code class="ruby">        y += 1</code>
         </li>
@@ -432,8 +432,8 @@
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="1278" data-linenumber="53">
-          <span class="hits">1278</span>
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
           
           <code class="ruby">      x += 1</code>
         </li>
@@ -444,8 +444,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="426" data-linenumber="55">
-          <span class="hits">426</span>
+        <li class="missed" data-hits="0" data-linenumber="55">
+          
           
           <code class="ruby">    box_array</code>
         </li>
@@ -468,38 +468,38 @@
           <code class="ruby">  def sudoku_solve!</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="59">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
           
           <code class="ruby">    position_checked = 0</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="60">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
           
           <code class="ruby">    while @array_of_rows.flatten.include?(0)</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="61">
-          <span class="hits">13</span>
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
           
           <code class="ruby">      @array_of_rows.each_with_index do |row, row_index|</code>
         </li>
       
-        <li class="covered" data-hits="113" data-linenumber="62">
-          <span class="hits">113</span>
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
           
           <code class="ruby">        row.each_with_index do |column, col_index|</code>
         </li>
       
-        <li class="covered" data-hits="1012" data-linenumber="63">
-          <span class="hits">1012</span>
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
           
           <code class="ruby">          if position_checked &gt; 90</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
           
           <code class="ruby">            raise ArgumentError, &quot;no solution&quot;</code>
         </li>
@@ -510,68 +510,68 @@
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="1011" data-linenumber="66">
-          <span class="hits">1011</span>
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
           
           <code class="ruby">          if @array_of_rows[row_index][col_index] == 0</code>
         </li>
       
-        <li class="covered" data-hits="423" data-linenumber="67">
-          <span class="hits">423</span>
+        <li class="missed" data-hits="0" data-linenumber="67">
+          
           
           <code class="ruby">            @solutions = (1..9).to_a</code>
         </li>
       
-        <li class="covered" data-hits="423" data-linenumber="68">
-          <span class="hits">423</span>
+        <li class="missed" data-hits="0" data-linenumber="68">
+          
           
           <code class="ruby">            @solutions -= nine_box_grid(row_index, col_index)</code>
         </li>
       
-        <li class="covered" data-hits="423" data-linenumber="69">
-          <span class="hits">423</span>
+        <li class="missed" data-hits="0" data-linenumber="69">
+          
           
           <code class="ruby">            @solutions -= get_row(row_index)</code>
         </li>
       
-        <li class="covered" data-hits="423" data-linenumber="70">
-          <span class="hits">423</span>
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
           
           <code class="ruby">            @solutions -= get_column(col_index)</code>
         </li>
       
-        <li class="covered" data-hits="423" data-linenumber="71">
-          <span class="hits">423</span>
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
           
           <code class="ruby">            if @solutions.size == 1</code>
         </li>
       
-        <li class="covered" data-hits="104" data-linenumber="72">
-          <span class="hits">104</span>
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
           
           <code class="ruby">              @array_of_rows[row_index][col_index] = @solutions.join(&quot;&quot;).to_i</code>
         </li>
       
-        <li class="covered" data-hits="104" data-linenumber="73">
-          <span class="hits">104</span>
+        <li class="missed" data-hits="0" data-linenumber="73">
+          
           
           <code class="ruby">              position_checked = 0</code>
         </li>
       
-        <li class="covered" data-hits="104" data-linenumber="74">
-          <span class="hits">104</span>
+        <li class="missed" data-hits="0" data-linenumber="74">
+          
           
           <code class="ruby">              puts</code>
         </li>
       
-        <li class="covered" data-hits="104" data-linenumber="75">
-          <span class="hits">104</span>
+        <li class="missed" data-hits="0" data-linenumber="75">
+          
           
           <code class="ruby">              board</code>
         </li>
       
-        <li class="covered" data-hits="104" data-linenumber="76">
-          <span class="hits">104</span>
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
           
           <code class="ruby">              puts</code>
         </li>
@@ -588,8 +588,8 @@
           <code class="ruby">          end</code>
         </li>
       
-        <li class="covered" data-hits="1011" data-linenumber="79">
-          <span class="hits">1011</span>
+        <li class="missed" data-hits="0" data-linenumber="79">
+          
           
           <code class="ruby">          position_checked += 1</code>
         </li>
@@ -648,26 +648,26 @@
           <code class="ruby">  def validate(string_input)</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="89">
-          <span class="hits">17</span>
+        <li class="missed" data-hits="0" data-linenumber="89">
+          
           
           <code class="ruby">    if string_input.length &gt; 81</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="90">
+          
           
           <code class="ruby">      raise ArgumentError, &quot;Your input must be 81 character long and currently it is greater than 81&quot;</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="91">
-          <span class="hits">16</span>
+        <li class="missed" data-hits="0" data-linenumber="91">
+          
           
           <code class="ruby">    elsif string_input.length &lt; 81</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="92">
+          
           
           <code class="ruby">      raise ArgumentError, &quot; Your input must be 81 character long and currently it is less than 81&quot;</code>
         </li>
@@ -716,11 +716,11 @@
         <div class="source_table" id="fb64d36969f2b4f7af61ed192e2400b818719d39">
   <div class="header">
     <h3>lib/user_interface.rb</h3>
-    <h4><span class="red">42.42 %</span> covered</h4>
+    <h4><span class="red">41.67 %</span> covered</h4>
     <div>
-      <b>33</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
-      <span class="red"><b>19</b> lines missed.</span>
+      <b>36</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>21</b> lines missed.</span>
     </div>
   </div>
   
@@ -757,20 +757,20 @@
           <code class="ruby">  def start_game</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">    puts &quot;Let&#39;s start the game!&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">    puts &quot;Would you like to enter the numbers or read them from file? (enter/read)&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    if enter_or_read</code>
         </li>
@@ -886,190 +886,196 @@
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    elsif user_decision.upcase == &quot;N&quot;</code>
+          <code class="ruby">      puts &quot;I did it!&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="28">
           
           
+          <code class="ruby">    elsif user_decision.upcase == &quot;N&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
           <code class="ruby">      puts &quot;Goodbye!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="31">
           
           
           <code class="ruby">      puts &quot;I dont understand what you are saying&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
+        <li class="missed" data-hits="0" data-linenumber="33">
           
           
           <code class="ruby">    puts &quot;I hope I was helpful =)&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">  def enter_or_read</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="36">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
           
           <code class="ruby">    input = gets.chomp</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="37">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    if input == &quot;enter&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">      true</code>
+          <code class="ruby">    if input == &quot;enter&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="39">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="39">
           
-          <code class="ruby">    elsif input == &quot;read&quot;</code>
+          
+          <code class="ruby">      true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
+          <code class="ruby">    elsif input == &quot;read&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="41">
+          
+          
           <code class="ruby">      false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">      raise ArgumentError, &quot;Something went wrong, please try again.&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="46">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
           <code class="ruby">  def read_from_file(filepath)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">    begin</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="48">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
           
           <code class="ruby">      File.read(filepath)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby">    rescue</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
           
           <code class="ruby">      raise ArgumentError, &quot;No such file. Please try again&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby"># user_interface = User_interface.new</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># user_interface.start_game</code>
+          <code class="ruby">user_interface = User_interface.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">user_interface.start_game</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
@@ -1083,11 +1089,11 @@
         <div class="source_table" id="8c6d6cea32672c3ab13f58a18a98a5653ba06209">
   <div class="header">
     <h3>spec/sudoku_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">63.83 %</span> covered</h4>
     <div>
       <b>47</b> relevant lines. 
-      <span class="green"><b>47</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>17</b> lines missed.</span>
     </div>
   </div>
   
@@ -1118,26 +1124,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="5">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">  let(:sudoku) {Sudoku.new(&quot;530070000600195000098000060800060003400803001700020006060000280000419005000080079&quot;)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">  let(:too_hard_sudoku) {Sudoku.new(&quot;000600070000043090600000003850000000720050069364900081000830004000090035037000600&quot;)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">  let(:too_short_sudoku) {Sudoku.new(&quot;123456&quot;)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">  let(:too_long_sudoku) {Sudoku.new(&quot;0006000700000430906000000038500000007200500693649000810008300040000900350370006003245&quot;)}</code>
         </li>
@@ -1160,8 +1166,8 @@
           <code class="ruby">    it &quot;checks if array is created&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
           
           <code class="ruby">      expect(sudoku.create_rows).to be_a_kind_of(Array)</code>
         </li>
@@ -1184,8 +1190,8 @@
           <code class="ruby">    it &quot;checks if 2 dimensional array is created&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
           
           <code class="ruby">      expect(sudoku.create_rows[0]).to be_a_kind_of(Array)</code>
         </li>
@@ -1208,8 +1214,8 @@
           <code class="ruby">    it &quot;checks if array elements contains numbers from 0 to 9&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
           
           <code class="ruby">      expect(sudoku.create_rows).to all(all(be_kind_of(Integer).and(be &gt;= 0).and(be &lt;= 9)))</code>
         </li>
@@ -1244,8 +1250,8 @@
           <code class="ruby">    it &quot;checks if row is an array&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
           
           <code class="ruby">      expect(sudoku.get_row(0)).to be_a_kind_of(Array)</code>
         </li>
@@ -1268,8 +1274,8 @@
           <code class="ruby">    it &quot;checks if row is a valid column&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
           
           <code class="ruby">      expect(sudoku.get_row(0)).to match_array([5, 3, 0, 0, 7, 0, 0, 0, 0])</code>
         </li>
@@ -1304,8 +1310,8 @@
           <code class="ruby">    it &quot;checks if column is an array&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
           
           <code class="ruby">      expect(sudoku.get_column(0)).to be_a_kind_of(Array)</code>
         </li>
@@ -1328,8 +1334,8 @@
           <code class="ruby">    it &quot;checks if column is a valid column&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
           
           <code class="ruby">      expect(sudoku.get_column(0)).to match_array([5, 6, 0, 8, 4, 7, 0, 0, 0])</code>
         </li>
@@ -1370,8 +1376,8 @@
           <code class="ruby">    it &quot;checks if there is any output&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="47">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
           
           <code class="ruby">      expect {sudoku.board}.to output.to_stdout</code>
         </li>
@@ -1394,8 +1400,8 @@
           <code class="ruby">    it &quot;checks if the output matches the expected output&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="51">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
           
           <code class="ruby">      expect {sudoku.board}.to output(&quot;\n- - - - - - - - - - - - \n| 5 3 0 | 0 7 0 | 0 0 0 \n| 6 0 0 | 1 9 5 | 0 0 0 \n| 0 9 8 | 0 0 0 | 0 6 0 \n- - - - - - - - - - - - \n| 8 0 0 | 0 6 0 | 0 0 3 \n| 4 0 0 | 8 0 3 | 0 0 1 \n| 7 0 0 | 0 2 0 | 0 0 6 \n- - - - - - - - - - - - \n| 0 6 0 | 0 0 0 | 2 8 0 \n| 0 0 0 | 4 1 9 | 0 0 5 \n| 0 0 0 | 0 8 0 | 0 7 9 &quot;).to_stdout</code>
         </li>
@@ -1442,8 +1448,8 @@
           <code class="ruby">    it &quot;checks if array is returned&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
           
           <code class="ruby">      expect(sudoku.nine_box_grid(0, 0)).to be_a_kind_of(Array)</code>
         </li>
@@ -1466,8 +1472,8 @@
           <code class="ruby">    it &quot;checks if the correct array is returned&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="63">
+          
           
           <code class="ruby">      expect(sudoku.nine_box_grid(4, 4)).to match_array([0, 6, 0, 8, 0, 3, 0, 2, 0])</code>
         </li>
@@ -1490,8 +1496,8 @@
           <code class="ruby">    it &quot;checks if the size of array is valid&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="67">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="67">
+          
           
           <code class="ruby">      expect(sudoku.nine_box_grid(8, 8).size).to eq(9)</code>
         </li>
@@ -1538,8 +1544,8 @@
           <code class="ruby">    it &quot;checks if there is any output&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="75">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="75">
+          
           
           <code class="ruby">      expect {sudoku.sudoku_solve!}.to output.to_stdout</code>
         </li>
@@ -1562,8 +1568,8 @@
           <code class="ruby">    it &quot;checks if function returns nil&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="79">
+          
           
           <code class="ruby">      expect(sudoku.sudoku_solve!).to be_nil</code>
         </li>
@@ -1586,8 +1592,8 @@
           <code class="ruby">    it &quot;checks if error is raised when there is no solution&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="83">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="83">
+          
           
           <code class="ruby">      expect {too_hard_sudoku.sudoku_solve!}.to raise_error(ArgumentError, &quot;no solution&quot;)</code>
         </li>
@@ -1634,8 +1640,8 @@
           <code class="ruby">    it &quot;checks if error is raise when sudoku is too short&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="91">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="91">
+          
           
           <code class="ruby">      expect {too_short_sudoku}.to raise_error(ArgumentError, &quot; Your input must be 81 character long and currently it is less than 81&quot;)</code>
         </li>
@@ -1658,8 +1664,8 @@
           <code class="ruby">    it &quot;checks if error is raise when sudoku is too long&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="95">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="95">
+          
           
           <code class="ruby">      expect {too_long_sudoku}.to raise_error(ArgumentError, &quot;Your input must be 81 character long and currently it is greater than 81&quot;)</code>
         </li>
@@ -1696,11 +1702,11 @@
         <div class="source_table" id="f7531208bf074b5767f9de5265838d61b5ccb196">
   <div class="header">
     <h3>spec/user_interface_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">3.7 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>54</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>52</b> lines missed.</span>
     </div>
   </div>
   
@@ -1725,8 +1731,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
           
           <code class="ruby">RSpec.describe User_interface do</code>
         </li>
@@ -1737,46 +1743,46 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="6">
-          <span class="hits">6</span>
+        <li class="missed" data-hits="0" data-linenumber="6">
           
-          <code class="ruby">  let(:user_interface) { User_interface.new }</code>
+          
+          <code class="ruby">  before do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    puts &quot;XDDDDDDDDDDDDDDDDDDDDdd&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="10">
           
-          <code class="ruby">  context &quot;#enter_or_read&quot; do</code>
+          
+          <code class="ruby">  let(:user_interface) { User_interface.new }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">    it &quot;checks if enter return true&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;enter&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(user_interface.enter_or_read).to eq(true)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  context &quot;#start_game&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -1785,22 +1791,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
           
-          <code class="ruby">    it &quot;checks if enter return false&quot; do</code>
+          
+          <code class="ruby">    before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="15">
           
-          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;read&quot;)</code>
+          
+          <code class="ruby">      allow(user_interface).to receive(:enter_or_read).and_return(true)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="16">
           
-          <code class="ruby">      expect(user_interface.enter_or_read).to eq(false)</code>
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;530070000600195000098000060800060003400803001700020006060000280000419005000080079&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -1815,64 +1821,64 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="19">
           
-          <code class="ruby">    it &quot;checks if it raises error&quot; do</code>
+          
+          <code class="ruby">    it &quot;checks if lines are displayed&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="20">
           
-          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;xd&quot;)</code>
+          
+          <code class="ruby">      expect {user_interface.start_game}.to output(/Let&#39;s start the game!/).to_stdout</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      expect {user_interface.enter_or_read}.to raise_error(ArgumentError, &quot;Something went wrong, please try again.&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    it &quot;checks if lines are displayed&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">      expect {user_interface.start_game}.to output(/Would you like to enter the numbers or read them from file?/).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="27">
           
-          <code class="ruby">  context &quot;#read_from_file&quot; do</code>
+          
+          <code class="ruby">    it &quot;checks if lines are displayed&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="28">
           
-          <code class="ruby">    it &quot;checks if method read from file correctly&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
           
-          <code class="ruby">      expect(user_interface.read_from_file(&quot;/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt&quot;)).to eq(&quot;530070000600195000098000060800060003400803001700020006060000280000419005000080079&quot;)</code>
+          <code class="ruby">      expect {user_interface.start_game}.to output(/Let&#39;s fill out a sudoku table with your original inputs:/).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
@@ -1887,16 +1893,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="31">
           
-          <code class="ruby">    it &quot;checks if method raises error if no such file&quot; do</code>
+          
+          <code class="ruby">    it &quot;checks if entering 81 character path works&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="32">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="32">
           
-          <code class="ruby">      expect {user_interface.read_from_file(&quot;XD&quot;)}.to raise_error(ArgumentError, &quot;No such file. Please try again&quot;)</code>
+          
+          <code class="ruby">      expect {user_interface.start_game}.to output(/ Please enter the 81 numbers characters found in the original Sudoku table/).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
@@ -1911,40 +1917,40 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="missed" data-hits="0" data-linenumber="35">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    it &quot;checks if reading form file path works&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="missed" data-hits="0" data-linenumber="36">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      allow(user_interface).to receive(:enter_or_read).and_return(false)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="missed" data-hits="0" data-linenumber="37">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      allow(user_interface).to receive(:read_from_file).and_return(&quot;530070000600195000098000060800060003400803001700020006060000280000419005000080079&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="missed" data-hits="0" data-linenumber="38">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">      expect {user_interface.start_game}.to output(/Please enter full file path/).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
@@ -1953,25 +1959,421 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="missed" data-hits="0" data-linenumber="42">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  context &quot;#solve&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="44">
+          
+          
+          <code class="ruby">    it &quot;checks if lines are displayed&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">      expect {user_interface.solve}.to output(/Are you ready to see how I help you to solve your Sudoku game?/).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">    it &quot;checks if Y path works&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;Y&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="50">
+          
+          
+          <code class="ruby">      allow(@game).to receive(:sudoku_solve!).and_return(nil)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">      expect {user_interface.solve}.to output(/I did it!/).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">    it &quot;checks if N path works&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="55">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;N&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">      expect {user_interface.solve}.to output(/Goodbye!/).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
+          <code class="ruby">    it &quot;checks if else path works&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;xd&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
+          
+          <code class="ruby">      expect {user_interface.solve}.to output(/I dont understand what you are saying/).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="64">
+          
+          
+          <code class="ruby">    it &quot;checks if lines are displayed&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">      expect {user_interface.solve}.to output(/I hope I was helpful =\)/).to_stdout</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">  context &quot;#enter_or_read&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
+          
+          <code class="ruby">    it &quot;checks if enter return true&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="72">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;enter&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="73">
+          
+          
+          <code class="ruby">      expect(user_interface.enter_or_read).to eq(true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
+          
+          <code class="ruby">    it &quot;checks if enter return false&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="77">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;read&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="78">
+          
+          
+          <code class="ruby">      expect(user_interface.enter_or_read).to eq(false)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="81">
+          
+          
+          <code class="ruby">    it &quot;checks if it raises error&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="82">
+          
+          
+          <code class="ruby">      allow(user_interface).to receive(:gets).and_return(&quot;xd&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="83">
+          
+          
+          <code class="ruby">      expect {user_interface.enter_or_read}.to raise_error(ArgumentError, &quot;Something went wrong, please try again.&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="87">
+          
+          
+          <code class="ruby">  context &quot;#read_from_file&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="88">
+          
+          
+          <code class="ruby">    it &quot;checks if method read from file correctly&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="89">
+          
+          
+          <code class="ruby">      expect(user_interface.read_from_file(&quot;/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt&quot;)).to eq(&quot;530070000600195000098000060800060003400803001700020006060000280000419005000080079&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="92">
+          
+          
+          <code class="ruby">    it &quot;checks if method raises error if no such file&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="93">
+          
+          
+          <code class="ruby">      expect {user_interface.read_from_file(&quot;XD&quot;)}.to raise_error(ArgumentError, &quot;No such file. Please try again&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="96">
+          
+          
+          <code class="ruby">    it &quot;checks if nil raises error&quot; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="97">
+          
+          
+          <code class="ruby">      expect {user_interface.read_from_file(nil)}.to raise_error(ArgumentError, &quot;No such file. Please try again&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="106">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
           <code class="ruby"># before do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="110">
           
           
           <code class="ruby">#   allow($stdout).to receive(:write)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="111">
           
           
           <code class="ruby"># end</code>
