@@ -80,9 +80,6 @@ RSpec.describe User_interface do
   end
 
   context "#read_from_file" do
-    it "checks if method read from file correctly" do
-      expect(user_interface.read_from_file("/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt")).to eq("530070000600195000098000060800060003400803001700020006060000280000419005000080079")
-    end
 
     it "checks if method raises error if no such file" do
       expect {user_interface.read_from_file("XD")}.to raise_error(ArgumentError, "No such file. Please try again")
