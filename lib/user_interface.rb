@@ -2,38 +2,21 @@ require_relative 'sudoku'
 
 class User_interface
 
-  def read_from_file(filepath)
-    begin
-      File.read(filepath)
-    rescue
-      raise ArgumentError, 'No such file. Try again'
-    end
-  end
-
   def start_game
     puts "Let's start the game!"
-    correct = false
-    until correct
-      puts "Would you like to enter the numbers or read them from file? (enter/read)"
-      input = gets.chomp
-      if input == "enter"
-        puts " Please enter the 81 numbers characters found in the original Sudoku table, including zeros ('0') for any blank space(ex: 50030050060110440555...)"
-        user_input = gets.chomp
-        string_input = user_input.to_s
-        @game = Sudoku.new(string_input)
-        correct = true
-      elsif input == "read"
-        puts "Please enter full file path (ex:/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt)"
-        @game = Sudoku.new(read_from_file(gets.chomp))
-        correct = true
-      else
-        puts "Something went wrong, please try again."
-      end
+    puts "Would you like to enter the numbers or read them from file? (enter/read)"
+    if enter_or_read
+      puts " Please enter the 81 numbers characters found in the original Sudoku table, including zeros ('0') for any blank space(ex: 50030050060110440555...)"
+      @game = Sudoku.new(gets.chomp.to_s)
+    else
+      puts "Please enter full file path (ex:/home/oskar/ruby_sudoku/projektsemestralny-xddd/lib/plansza.txt)"
+      @game = Sudoku.new(read_from_file(gets.chomp))
     end
     puts "Let's fill out a sudoku table with your original inputs: "
     # Here goes the code for printing the board without solving it
     @game.board
     puts
+    solve
   end
 
   def solve
@@ -48,10 +31,28 @@ class User_interface
     end
     puts "I hope I was helpful =)"
   end
+
+  def enter_or_read
+    input = gets.chomp
+    if input == "enter"
+      true
+    elsif input == "read"
+      false
+    else
+      raise ArgumentError, "Something went wrong, please try again."
+    end
+  end
+
+  def read_from_file(filepath)
+    begin
+      File.read(filepath)
+    rescue
+      raise ArgumentError, "No such file. Please try again"
+    end
+  end
 end
 
-user_interface = User_interface.new
-user_interface.start_game
-user_interface.solve
+# user_interface = User_interface.new
+# user_interface.start_game
 
 
