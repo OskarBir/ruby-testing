@@ -5,9 +5,9 @@ RSpec.describe User_interface do
 
   let(:user_interface) {User_interface.new}
 
-  context "#start_game" do
+  describe "#start_game" do
 
-    before(:each) do
+    before do
       allow(user_interface).to receive(:enter_or_read).and_return(true)
       allow(user_interface).to receive(:gets).and_return("530070000600195000098000060800060003400803001700020006060000280000419005000080079")
     end
@@ -35,7 +35,12 @@ RSpec.describe User_interface do
     end
   end
 
-  context "#solve" do
+  describe "#solve" do
+
+    before do
+      allow(user_interface).to receive(:enter_or_read).and_return(true)
+      allow(user_interface).to receive(:gets).and_return("530070000600195000098000060800060003400803001700020006060000280000419005000080079")
+    end
 
     it "checks if lines are displayed" do
       expect {user_interface.solve}.to output(/Are you ready to see how I help you to solve your Sudoku game?/).to_stdout
@@ -62,7 +67,7 @@ RSpec.describe User_interface do
     end
   end
 
-  context "#enter_or_read" do
+  describe "#enter_or_read" do
     it "checks if enter return true" do
       allow(user_interface).to receive(:gets).and_return("enter")
       expect(user_interface.enter_or_read).to eq(true)
@@ -79,7 +84,7 @@ RSpec.describe User_interface do
     end
   end
 
-  context "#read_from_file" do
+  describe "#read_from_file" do
 
     it "checks if method raises error if no such file" do
       expect {user_interface.read_from_file("XD")}.to raise_error(ArgumentError, "No such file. Please try again")

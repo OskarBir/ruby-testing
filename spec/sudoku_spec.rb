@@ -7,7 +7,7 @@ RSpec.describe Sudoku do
   let(:too_short_sudoku) {Sudoku.new("123456")}
   let(:too_long_sudoku) {Sudoku.new("0006000700000430906000000038500000007200500693649000810008300040000900350370006003245")}
 
-  context "#create rows" do
+  describe "#create rows" do
     it "checks if array is created" do
       expect(sudoku.create_rows).to be_a_kind_of(Array)
     end
@@ -21,7 +21,7 @@ RSpec.describe Sudoku do
     end
   end
 
-  context "#get row" do
+  describe "#get row" do
     it "checks if row is an array" do
       expect(sudoku.get_row(0)).to be_a_kind_of(Array)
     end
@@ -31,7 +31,7 @@ RSpec.describe Sudoku do
     end
   end
 
-  context "#get column" do
+  describe "#get column" do
     it "checks if column is an array" do
       expect(sudoku.get_column(0)).to be_a_kind_of(Array)
     end
@@ -41,7 +41,7 @@ RSpec.describe Sudoku do
     end
   end
 
-  context "#board" do
+  describe "#board" do
 
     it "checks if there is any output" do
       expect {sudoku.board}.to output.to_stdout
@@ -53,7 +53,7 @@ RSpec.describe Sudoku do
   end
 
 
-  context "#nine_box_grid" do
+  describe "#nine_box_grid" do
 
     it "checks if array is returned" do
       expect(sudoku.nine_box_grid(0, 0)).to be_a_kind_of(Array)
@@ -69,7 +69,7 @@ RSpec.describe Sudoku do
 
   end
 
-  context "#sudoku_solve!" do
+  describe "#sudoku_solve!" do
 
     it "checks if there is any output" do
       expect {sudoku.sudoku_solve!}.to output.to_stdout
@@ -85,7 +85,7 @@ RSpec.describe Sudoku do
 
   end
 
-  context "#validate" do
+  describe "#validate" do
 
     it "checks if error is raise when sudoku is too short" do
       expect {too_short_sudoku}.to raise_error(ArgumentError, " Your input must be 81 character long and currently it is less than 81")

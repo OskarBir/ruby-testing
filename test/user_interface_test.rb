@@ -9,11 +9,6 @@ class TestInterface < Minitest::Test
 
     let(:user_interface) {User_interface.new}
 
-    # before do
-    #   @original_stdout = $stdout
-    #   $stdout = File.new("out.txt", 'w')
-    # end
-
     describe "#start_game" do
 
       it "checks if lines are displayed" do
